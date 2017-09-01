@@ -1,0 +1,273 @@
+/* 
+* @Author: anchen
+* @Date:   2017-07-31 07:56:17
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-08-01 08:18:27
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+   outline: none;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+ 
+}
+html { height: 101%;
+ 
+}
+body { font-size: 62.5%;
+ line-height: 1;
+ font-family: Arial, Tahoma, sans-serif;
+ 
+}
+ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block;
+ 
+}
+ol, ul { list-style: none;
+ 
+}
+ blockquote, q { quotes: none;
+ 
+}
+blockquote:before, blockquote:after, q:before, q:after { content: '';
+ content: none;
+ 
+}
+strong { font-weight: bold;
+ 
+}
+  table { border-collapse: collapse;
+ border-spacing: 0;
+ 
+}
+img { border: 0;
+ max-width: 100%;
+ 
+}
+ p { font-size: 1.2em;
+ line-height: 1.0em;
+ color: #333;
+ }
+ul.box {
+    position: relative;
+    z-index: 1; /* prevent shadows falling behind containers with backgrounds */
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+
+ul.box li {
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 150px;
+    padding: 0;
+    border: 1px solid #efefef;
+    margin: 0 30px 30px 0;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset; 
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset; 
+}
+
+ul.box li:before,
+ul.box li:after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 70%;
+    max-width: 300px; /* avoid rotation causing ugly appearance at large container widths */
+    max-height: 100px;
+    height: 55%;
+    -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    -webkit-transform: skew(-15deg) rotate(-6deg);
+    -moz-transform: skew(-15deg) rotate(-6deg);
+    -ms-transform: skew(-15deg) rotate(-6deg);
+    -o-transform: skew(-15deg) rotate(-6deg);
+    transform: skew(-15deg) rotate(-6deg); 
+}
+
+ul.box li:after {
+    left: auto;
+    right: 10px;
+    -webkit-transform: skew(15deg) rotate(6deg);
+    -moz-transform: skew(15deg) rotate(6deg);
+    -ms-transform: skew(15deg) rotate(6deg);
+    -o-transform: skew(15deg) rotate(6deg);
+    transform: skew(15deg) rotate(6deg); 
+}
+.ribbon {
+    background-color: #a00;
+    overflow: hidden;
+    /* top left corner */
+    position: absolute;
+    left: -3em;
+    top: 2.5em;
+    /* 45 deg ccw rotation */
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    /* shadow */
+    -moz-box-shadow: 0 0 1em #888;
+    -webkit-box-shadow: 0 0 1em #888;
+}
+.ribbon a {
+    border: 1px solid #faa;
+    color: #fff;
+    display: block;
+    font: bold 81.25% 'Helvetiva Neue', Helvetica, Arial, sans-serif;
+    margin: 0.05em 0 0.075em 0;
+    padding: 0.5em 3.5em;
+    text-align: center;
+    text-decoration: none;
+    /* shadow */
+    text-shadow: 0 0 0.5em #444;
+}
+/* Smartphones (portrait and landscape) ----------- */ @media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {   /* Styles */ 
+}
+ /* Smartphones (landscape) ----------- */ @media only screen and (min-width : 321px) {   /* Styles */ 
+}
+ /* Smartphones (portrait) ----------- */ @media only screen and (max-width : 320px) {   /* Styles */ 
+}
+ /* iPads (portrait and landscape) ----------- */ @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {   /* Styles */ 
+}
+ /* iPads (landscape) ----------- */ @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {   /* Styles */ 
+}
+ /* iPads (portrait) ----------- */ @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {   /* Styles */ 
+}
+ /* Desktops and laptops ----------- */ @media only screen and (min-width : 1224px) {   /* Styles */ 
+}
+ /* Large screens ----------- */ @media only screen and (min-width : 1824px) {   /* Styles */ 
+}
+ /* iPhone 4 ----------- */ @media only screen and (-webkit-min-device-pixel-ratio:1.5), only screen and (min-device-pixel-ratio:1.5) {   /* Styles */ }
+ .transparent {
+    filter: alpha(opacity=50);
+    /* internet explorer */     -khtml-opacity: 0.5;
+    /* khtml, old safari */     -moz-opacity: 0.5;
+    /* mozilla, netscape */     opacity: 0.5;
+    /* fx, safari, opera */ }
+ul.box {
+    position: relative;
+    z-index: 1; /* prevent shadows falling behind containers with backgrounds */
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+
+ul.box li {
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 150px;
+    padding: 0;
+    border: 1px solid #efefef;
+    margin: 0 30px 30px 0;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset; 
+    box-shadow: 0 1px 4px rgba(0, 0,0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset; 
+}
+
+ul.box li:before,
+ul.box li:after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 70%;
+    max-width: 300px; /* avoid rotation causing ugly appearance at large container widths */
+    max-height: 100px;
+    height: 55%;
+    -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    -webkit-transform: skew(-15deg) rotate(-6deg);
+    -moz-transform: skew(-15deg) rotate(-6deg);
+    -ms-transform: skew(-15deg) rotate(-6deg);
+    -o-transform: skew(-15deg) rotate(-6deg);
+    transform: skew(-15deg) rotate(-6deg); 
+}
+
+ul.box li:after {
+    left: auto;
+    right: 10px;
+    -webkit-transform: skew(15deg) rotate(6deg);
+    -moz-transform: skew(15deg) rotate(6deg);
+    -ms-transform: skew(15deg) rotate(6deg);
+    -o-transform: skew(15deg) rotate(6deg);
+    transform: skew(15deg) rotate(6deg); 
+}
+#columns-3 {
+     text-align: justify;
+     -moz-column-count: 3;
+     -moz-column-gap: 12px;
+     -moz-column-rule: 1px solid #c4c8cc;
+     -webkit-column-count: 3;
+     -webkit-column-gap: 12px;
+     -webkit-column-rule: 1px solid #c4c8cc;
+ }
+ .container{
+    width: 1200px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    font-size: 16px;
+ }
+ .container ul{
+    
+ }
+ .container ul li{
+    display: table-cell;
+    width: 1%;
+ }
+ pre {
+     white-space: pre-wrap;       /* css-3 */
+     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+     white-space: -pre-wrap;      /* Opera 4-6 */
+     white-space: -o-pre-wrap;    /* Opera 7 */
+     word-wrap: break-word;       /* Internet Explorer 5.5+ */
+ }
+ .clearfix:before, .container:after { content: "";
+  display: table;
+  
+ }
+ .clearfix:after { clear: both;
+  
+ }
+  /* IE 6/7 */ .clearfix { zoom: 1;
+}
+a {
+      color: #00e;
+}
+a:visited {
+      color: #551a8b;
+}
+a:hover {
+      color: #06e;
+}
+a:focus {
+      outline: thin dotted;
+}
+a:hover, a:active {
+      outline: 0;
+}
+a, a:visited, a:active {
+      text-decoration: none;
+      color: #fff;
+      -webkit-transition: all .3s ease-in-out;
+}
+
+a:hover, .glow {
+      color: #ff0;
+      text-shadow: 0 0 10px #ff0;
+}

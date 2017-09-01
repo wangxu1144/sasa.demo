@@ -1,0 +1,483 @@
+* {
+	margin: 0;
+	padding: 0
+}
+
+a {
+	text-decoration: none
+}
+
+li {
+	list-style: none
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clearfix {
+	overflow: hidden;
+}
+
+.toobar {
+	width: 100%;
+	height: 33px;
+	background: #f2f2f2;
+	border-bottom: 1px solid #e5e5e5
+}
+
+.menu {
+	width: 1239px;
+	margin: 0 auto
+}
+
+.menus {
+	width: 1239px;
+	height: 33px;
+	background: #f2f2f2;
+	margin: 0 auto
+}
+
+.menu1 {
+	float: left;
+	font-family: "微软雅黑";
+	line-height: 33px;
+	font-size: 13px;
+	width: 202px
+}
+
+.menu1 a {
+	color: #ec3e7d;
+	text-decoration: underline
+}
+
+.menu2 {
+	float: left;
+	margin-left: 250px;
+	font-family: "微软雅黑";
+	line-height: 33px;
+	font-size: 9px;
+	width: 750px
+}
+
+#sefacenter {
+	float: left;
+	width: 75px;
+	position: relative;
+	font-size: 13px;
+	font-family: "微软雅黑";
+	text-align: center
+}
+
+.zhanghu {
+	text-align: center;
+	float: left;
+	width: 85px;
+	cursor: pointer;
+	font-size: 9px;
+	position: relative
+}
+
+.zhanghuul {
+	float: left;
+	width: 96px;
+	height: 0;
+	position: absolute;
+	z-index: 1;
+	background: #fff;
+	left: -14px;
+	overflow: hidden
+}
+
+.zhanghu a {
+	color: #696969;
+	text-align: left
+}
+
+.zhanghu ul {
+	line-height: 23px;
+	background: #fff;
+	background: #3f3;
+	background: #fff;
+	-webkit-box-shadow: 2px 2px 10px #909090;
+	box-shadow: 2px 2px 10px #909090
+}
+
+.zhanghu li {
+	text-align: left;
+	margin-left: 20px
+}
+
+.welcome {
+	color: #696969;
+	font-size: 9px
+}
+
+.welcome a {
+	font-size: 9px
+}
+
+.gouwuche {
+	text-align: center;
+	float: left;
+	line-height: 33px;
+	width: 95px;
+	cursor: pointer;
+	line-height: 33px;
+	position: relative
+}
+
+.gouwucheimg {
+	line-height: 33px
+}
+
+.gouwuche a {
+	color: #696969
+}
+
+.gouwuchespan {
+	width: 300px;
+	height: 0;
+	background: #3f3;
+	position: absolute;
+	background: #fff;
+	-webkit-box-shadow: 2px 2px 10px #909090;
+	box-shadow: 2px 2px 10px #909090;
+	overflow: hidden;
+	color: # 696969
+}
+
+.empty {
+	width: 200px
+}
+
+.shoucang {
+	float: left;
+	width: 75px;
+	font-family: "微软雅黑";
+	font-size: 9px;
+	text-align: center;
+	cursor: pointer
+}
+
+.shoucang a {
+	color: #696969
+}
+
+.zhanneixin {
+	float: left;
+	width: 85px;
+	text-align: center;
+	cursor: pointer
+}
+
+.zhanneixin a {
+	color: #696969;
+	text-align: center
+}
+
+.jifencenter {
+	float: left;
+	font-size: 9px;
+	font-family: "微软雅黑";
+	width: 75px;
+	text-align: center;
+	cursor: pointer
+}
+
+.jifencenter a {
+	color: #696969
+}
+
+.Globalsite {
+	float: left;
+	width: 85px;
+	margin-left;
+	font-family: "微软雅黑";
+	font-size: 9px;
+	text-align: center;
+	cursor: pointer
+}
+
+.Globalsite a {
+	color: #696969
+}
+
+.guanzhu {
+	width: 120px;
+	float: left;
+	font-size: 9px;
+	font-family: "微软雅黑";
+	text-align: center;
+	cursor: pointer;
+	position: relative
+}
+
+.guanzhu a {
+	color: #696969
+}
+
+.guanzhu img {
+	margin-top: 5px;
+	margin-left: 10px
+}
+
+.guanzhuimg {
+	height: 100px;
+	width: 100px;
+	position: relative;
+	left: 575px;
+	float: left
+}
+
+#img1 {
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	display: none;
+	-webkit-box-shadow: 2px 2px 10px #909090;
+	box-shadow: 2px 2px 10px #909090
+}
+
+#img2 {
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	display: none;
+	-webkit-box-shadow: 2px 2px 10px #909090;
+	box-shadow: 2px 2px 10px #909090
+}
+
+.title {
+	margin-top: 50px;
+	margin-left: 30px;
+	height: 22px;
+	line-height: 22px
+}
+
+.titlespan {
+	font-family: "微软雅黑";
+	font-size: 20px
+}
+
+.rightspan {
+	margin-left: 100px;
+	font-size: 13px;
+	font-family: "微软雅黑";
+	height: 22px;
+	line-height: 17px
+}
+
+.rightspan a {
+	color: #ec3e7d
+}
+
+.menu2 div:hover {
+	background: #fff;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-ms-transition: all .2s linear;
+	transition: all .2s linear
+}
+
+.warp {
+	width: 1090px;
+	height: 492px;
+	margin: 10px auto
+}
+
+.warpimg {
+	padding-top: 40px;
+	float: left
+}
+
+.zhanghuul li a:hover {
+	color: #ec3e7d
+}
+
+.logo {
+	width: 1090px;
+	margin: 0 auto
+}
+
+.x-input_submit {
+	width: 350px;
+	height: 40px;
+	background: #ec3e7d;
+	text-align: center;
+	cursor: pointer;
+	top: 410px;
+	left: 0;
+	display: block;
+	left: 30px;
+	color: #fff;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	border: 0;
+	outline: none;
+}
+
+
+/*2017.4.7*/
+
+.main {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+}
+
+.logo {
+	margin-top: 0px;
+	width: 1090px;
+	height: 100px;
+}
+
+.index {
+	display: block;
+	position: absolute;
+	top: 20px;
+}
+
+.warpimg {
+	padding-top: 70px;
+	float: left;
+}
+
+.formregisger {
+	display: block;
+	width: 420px;
+	height: 492px;
+	float: left;
+	background: #FFFFFF;
+	-webkit-box-shadow: 2px 2px 10px #909090;
+	box-shadow: 2px 2px 10px #909090;
+}
+
+.registeruserName {
+	top: 113px;
+	left: 30px;
+	width: 346px;
+	height: 32px;
+}
+
+#tipuserName {
+	font-size: 13px;
+	font-family: '微软雅黑';
+	color: #EC3E7D;
+	width: auto;
+	top: 153px;
+	left: 30px;
+}
+
+.registerpassWord {
+	top: 178px;
+	left: 30px;
+	width: 346px;
+	height: 32px;
+}
+
+#tippassWord {
+	font-size: 13px;
+	font-family: '微软雅黑';
+	color: #EC3E7D;
+	width: auto;
+	height: 22px;
+	top: 220px;
+	left: 30px;
+	display: none;
+}
+
+.repassWord {
+	width: 346px;
+	height: 32px;
+	top: 243px;
+	left: 30px;
+}
+
+#tiprepassWord {
+	font-size: 13px;
+	font-family: '微软雅黑';
+	color: #EC3E7D;
+	left: 30px;
+	top: 283px;
+	display: none;
+}
+
+#yanzhengma {
+	float: left;
+	width: 180px;
+	height: 32px;
+	top: 306px;
+	left: 30px;
+}
+
+.yanzhengma {
+	width: 100px;
+	height: 36px;
+	font-size: 20px;
+	font-family: '微软雅黑';
+	left: 150px;
+	top: 306px;
+	text-align: center;
+	line-height: 36px;
+}
+
+#changeyzm {
+	font-size: 13px;
+	font-family: '微软雅黑';
+	text-decoration: none;
+	color: #000000;
+	left: 250px;
+	top: 306px;
+	width: auto;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+}
+
+#spanyz {
+	font-size: 13px;
+	font-family: '微软雅黑';
+	color: #EC3E7D;
+	left: 30px;
+	top: 343px;
+	display: none;
+}
+
+.yinsi {
+	font-size: 13px;
+	font-family: '微软雅黑';
+	top: 373px;
+	left: 30px;
+	width: 350px;
+	height: auto;
+	display: inline-block;
+}
+
+#check1 {
+	line-height: 22px;
+}
+
+.tiaokuan {
+	font-size: 14px;
+	font-family: '微软雅黑';
+	color: #000000;
+	text-decoration: none;
+}
+
+.yinsizhengce {
+	font-size: 15px;
+	font-family: '微软雅黑';
+	color: #000000;
+	text-decoration: none;
+}
+
+.pd10 {
+	display: block;
+	margin: 30px auto;
+}
+.yzm{width: 350px}
