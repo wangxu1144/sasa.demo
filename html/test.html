@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-3.1.1.min.js" ></script>
+		<style>
+			.inner{display: none;}
+		</style>
+	</head>
+	<body>
+		<ul class="outer">
+			<li>232323
+				<ul class="inner">
+					<li>dfdfdf</li>
+				</ul>			
+			</li>
+		</ul>
+		<script>
+			$(".outer li").click(function(){
+				$(".inner").show()
+			})
+		</script>
+	</body>
+</html>
